@@ -1,0 +1,122 @@
+# 📸 VisionCraft AI
+    ### Autonomous Commercial Product Photography Agent
+    
+    ![Gemini 2.5](https://img.shields.io/badge/AI-Gemini%202.5%20Flash-8E75B2?style=for-the-badge&logo=google)
+    ![LangGraph](https://img.shields.io/badge/Orchestration-LangGraph-FF4B4B?style=for-the-badge)
+    ![Bun](https://img.shields.io/badge/Runtime-Bun%20v1.1-000000?style=for-the-badge&logo=bun)
+    ![Next.js](https://img.shields.io/badge/Frontend-Next.js%2014-black?style=for-the-badge&logo=next.js)
+    ![Hono](https://img.shields.io/badge/Backend-Hono-E36002?style=for-the-badge&logo=hono)
+    
+    > **VisionCraft** is an autonomous multi-agent system that transforms raw, amateur product photos into professional commercial assets. It uses a "Vision-to-Execution" pipeline powered by **Google's Gemini 2.5 Flash** to analyze brand identity and generate hyper-realistic marketing scenery.
+    
+    ---
+    
+    ## 🚀 Key Features
+    
+    * **Multimodal Vision Analysis:** "The Eye" node uses **Gemini 2.5 Flash** to scan products, identifying brand logos, materials (aluminum/glass), and color palettes with 99% accuracy.
+    * **Autonomous Prompt Engineering:** The system doesn't just "guess." It strictly enforces brand constraints (colors/logos) while creatively engineering lighting and texture prompts.
+    * **High-Fidelity Generation:** "The Artist" node utilizes **Gemini 2.5 Flash Image** (Imagen 3) to render 8k resolution commercial assets.
+    * **Stateful Orchestration:** Built on **LangGraph**, enabling a self-correcting workflow where the Vision Node passes strict constraints to the Generation Node.
+    
+    ---
+    
+    ## 🏗️ Architecture
+    
+    The system operates on a specialized **Agentic Workflow**:
+    
+    ```mermaid
+    graph LR
+        A[User Upload] --> B(Vision Node);
+        B -->|Extracts Brand & Material| C(Prompt Engineer Node);
+        C -->|Synthesizes Scene| D(Generation Node);
+        D -->|Renders Asset| E[Final Commercial Image];
+        style B fill:#e1f5fe,stroke:#01579b
+        style D fill:#f3e5f5,stroke:#4a148c
+
+**Tech Stack:**
+
+*   **Core AI:** Google Gemini 2.5 Flash & Flash-Image
+    
+*   **Backend:** Bun (Runtime) + Hono (High-performance API)
+    
+*   **Frontend:** Next.js + React
+    
+*   **Logic:** LangChain.js + LangGraph
+    
+
+* * *
+
+## ⚡ Getting Started
+
+### Prerequisites
+
+*   [Bun](https://bun.sh/) installed (`powershell -c "irm bun.sh/install.ps1 | iex"` on Windows)
+    
+*   A **Google Gemini API Key** (Free tier supports Gemini 2.5 Flash)
+    
+
+### Installation
+
+1.  **Clone the Repository**
+    
+    Bash
+    
+        git clone [https://github.com/HARJAPAN2005/visioncraft-ai.git](https://github.com/HARJAPAN2005/visioncraft-ai.git)
+        cd visioncraft-ai
+    
+2.  **Install Dependencies**
+    
+    Bash
+    
+        # Install Backend Deps
+        cd backend
+        bun install
+        
+        # Install Frontend Deps
+        cd ../frontend
+        bun install
+    
+3.  Environment Setup
+    
+    Create a .env file in the backend/ folder:
+    
+    Code snippet
+    
+        GOOGLE_API_KEY=your_gemini_api_key_here
+    
+
+### Running the App
+
+You need to run the Frontend and Backend simultaneously. Open two terminals:
+
+**Terminal 1 (Backend Agent):**
+
+Bash
+
+    cd backend
+    bun run dev
+
+**Terminal 2 (Frontend UI):**
+
+Bash
+
+    cd frontend
+    bun run dev
+
+Open your browser to `http://localhost:3001` to start creating!
+
+* * *
+
+## 📸 Usage Example
+
+| Input (Raw Photo) | Prompt | Output (VisionCraft Result) |
+| --- | --- | --- |
+| <img src="https://www.google.com/search?q=https://via.placeholder.com/150%3Ftext%3DRaw%2BCan" width="150"> | "On a neon-lit gaming desk" | <img src="https://www.google.com/search?q=https://via.placeholder.com/150%3Ftext%3DAI%2BResult" width="150"> |
+
+_Note: The system automatically detected the "Monster Energy" logo and "Mango Loco" flavor text without user input._
+
+* * *
+
+## 🛡️ License
+
+This project is open-source and available under the **MIT License**.
