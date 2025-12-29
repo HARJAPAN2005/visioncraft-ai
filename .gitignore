@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+.bun/
+
+# Environment Variables (Protect your keys!)
+.env
+.env.local
+.env.*
+backend/.env
+frontend/.env
+
+# Build outputs
+.next/
+dist/
+out/
+
+# System files
+.DS_Store
