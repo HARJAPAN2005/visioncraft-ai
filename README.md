@@ -136,7 +136,7 @@ Open your browser to `http://localhost:3001` to start creating!
 
 | Input (Raw Photo) | Prompt | Output (VisionCraft Result) |
 | --- | --- | --- |
-| <img src="https://driftbasket.com/wp-content/uploads/2022/06/monster-e1692443093805.jpg" width="150"> | "On a neon-lit gaming desk" | <img src="" width="150"> |
+| <img src="https://driftbasket.com/wp-content/uploads/2022/06/monster-e1692443093805.jpg" width="150"> | "On a neon-lit gaming desk" | <img src="<img width="1024" height="1024" alt="Image" src="https://github.com/user-attachments/assets/1d42d0d6-890f-4abc-a4ba-c39c43a876d8" />" width="150"> |
 
 _Note: The system automatically detected the "Monster Energy" logo and "Mango Loco" flavor text without user input._
 
