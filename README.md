@@ -32,18 +32,18 @@
 
 ---
 
+* * *
 ## 📸 Real Results
-
-## 
 
 <div align="center">
 
-| Raw Input | AI Vision + Generation Result |
-| --- | --- |
-| <img src="https://www.google.com/search?q=https://driftbasket.com/wp-content/uploads/2022/06/monster-e1692443093805.jpg" width="250" /> | <img src="https://www.google.com/search?q=https://via.placeholder.com/250x300%3Ftext%3DPaste%2BYour%2BResult%2BLink%2BHere" width="250" /> |
-| Original Photo | "On a neon-lit gaming desk" |
+| **Raw Input** | **AI Vision + Generation Result** |
+| :---: | :---: |
+| <img src="https://driftbasket.com/wp-content/uploads/2022/06/monster-e1692443093805.jpg" width="250" /> | <img src="https://github.com/user-attachments/assets/371bc67e-d3e5-4820-9d72-c51956392b95" width="250" /> |
+| *Original Photo* | *"On a neon-lit gaming desk"* |
 
 </div>
+* * *
 
 ## \## 🏗️ Architecture
 
@@ -130,17 +130,7 @@ Bash
 
 Open your browser to `http://localhost:3001` to start creating!
 
-* * *
 
-## 📸 Usage Example
-
-| Input (Raw Photo) | Prompt | Output (VisionCraft Result) |
-| --- | --- | --- |
-| <img src="https://driftbasket.com/wp-content/uploads/2022/06/monster-e1692443093805.jpg" width="150"> | "On a neon-lit gaming desk" | <img src="<img width="1024" height="1024" alt="Image" src="https://github.com/user-attachments/assets/1d42d0d6-890f-4abc-a4ba-c39c43a876d8" />" width="150"> |
-
-_Note: The system automatically detected the "Monster Energy" logo and "Mango Loco" flavor text without user input._
-
-* * *
 
 ## 🛡️ License
 
