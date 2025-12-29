@@ -1,37 +1,62 @@
+<div align="center">
+
 # 📸 VisionCraft AI
-    ### Autonomous Commercial Product Photography Agent
-    
-    ![Gemini 2.5](https://img.shields.io/badge/AI-Gemini%202.5%20Flash-8E75B2?style=for-the-badge&logo=google)
-    ![LangGraph](https://img.shields.io/badge/Orchestration-LangGraph-FF4B4B?style=for-the-badge)
-    ![Bun](https://img.shields.io/badge/Runtime-Bun%20v1.1-000000?style=for-the-badge&logo=bun)
-    ![Next.js](https://img.shields.io/badge/Frontend-Next.js%2014-black?style=for-the-badge&logo=next.js)
-    ![Hono](https://img.shields.io/badge/Backend-Hono-E36002?style=for-the-badge&logo=hono)
-    
-    > **VisionCraft** is an autonomous multi-agent system that transforms raw, amateur product photos into professional commercial assets. It uses a "Vision-to-Execution" pipeline powered by **Google's Gemini 2.5 Flash** to analyze brand identity and generate hyper-realistic marketing scenery.
-    
-    ---
-    
-    ## 🚀 Key Features
-    
-    * **Multimodal Vision Analysis:** "The Eye" node uses **Gemini 2.5 Flash** to scan products, identifying brand logos, materials (aluminum/glass), and color palettes with 99% accuracy.
-    * **Autonomous Prompt Engineering:** The system doesn't just "guess." It strictly enforces brand constraints (colors/logos) while creatively engineering lighting and texture prompts.
-    * **High-Fidelity Generation:** "The Artist" node utilizes **Gemini 2.5 Flash Image** (Imagen 3) to render 8k resolution commercial assets.
-    * **Stateful Orchestration:** Built on **LangGraph**, enabling a self-correcting workflow where the Vision Node passes strict constraints to the Generation Node.
-    
-    ---
-    
-    ## 🏗️ Architecture
-    
-    The system operates on a specialized **Agentic Workflow**:
-    
-    ```mermaid
-    graph LR
-        A[User Upload] --> B(Vision Node);
-        B -->|Extracts Brand & Material| C(Prompt Engineer Node);
-        C -->|Synthesizes Scene| D(Generation Node);
-        D -->|Renders Asset| E[Final Commercial Image];
-        style B fill:#e1f5fe,stroke:#01579b
-        style D fill:#f3e5f5,stroke:#4a148c
+### Autonomous Commercial Product Photography Agent
+
+![VisionCraft Demo](https://via.placeholder.com/800x400?text=VisionCraft+Dashboard+Screenshot+Here)
+
+<p align="center">
+  <img src="https://img.shields.io/badge/AI-Gemini%202.5%20Flash-8E75B2?style=for-the-badge&logo=google&logoColor=white" />
+  <img src="https://img.shields.io/badge/Orchestration-LangGraph-FF4B4B?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Runtime-Bun%20v1.1-000000?style=for-the-badge&logo=bun&logoColor=white" />
+  <img src="https://img.shields.io/badge/Frontend-Next.js%2014-black?style=for-the-badge&logo=next.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/Backend-Hono-E36002?style=for-the-badge&logo=hono&logoColor=white" />
+</p>
+
+</div>
+
+---
+
+## ⚡ What is VisionCraft?
+
+**VisionCraft** is an autonomous multi-agent system that transforms raw, amateur product photos into professional commercial assets. It uses a "Vision-to-Execution" pipeline powered by **Google's Gemini 2.5 Flash** to analyze brand identity and generate hyper-realistic marketing scenery.
+
+## 🚀 Key Features
+
+| Feature | Description |
+| :--- | :--- |
+| 👁️ **The Eye** | Uses **Gemini 2.5 Flash** to scan products, identifying logos, materials, and colors with 99% accuracy. |
+| 🧠 **The Brain** | Autonomous Prompt Engineering that enforces brand constraints while designing lighting and texture. |
+| 🎨 **The Artist** | Renders 8k resolution assets using **Gemini 2.5 Flash Image** (Imagen 3). |
+| 🤖 **The Agent** | Self-correcting **LangGraph** workflow that passes data between nodes. |
+
+---
+
+## 📸 Real Results
+
+## 
+
+<div align="center">
+
+| Raw Input | AI Vision + Generation Result |
+| --- | --- |
+| <img src="https://www.google.com/search?q=https://driftbasket.com/wp-content/uploads/2022/06/monster-e1692443093805.jpg" width="250" /> | <img src="https://www.google.com/search?q=https://via.placeholder.com/250x300%3Ftext%3DPaste%2BYour%2BResult%2BLink%2BHere" width="250" /> |
+| Original Photo | "On a neon-lit gaming desk" |
+
+</div>
+
+## \## 🏗️ Architecture
+
+The system operates on a specialized \*\*Agentic Workflow\*\*:
+
+\`\`\`mermaid
+graph LR
+    A\[User Upload\] --> B(Vision Node);
+    B -->|Extracts Brand & Material| C(Prompt Engineer Node);
+    C -->|Synthesizes Scene| D(Generation Node);
+    D -->|Renders Asset| E\[Final Commercial Image\];
+    style B fill:#e1f5fe,stroke:#01579b
+    style D fill:#f3e5f5,stroke:#4a148c
 
 **Tech Stack:**
 
@@ -111,7 +136,7 @@ Open your browser to `http://localhost:3001` to start creating!
 
 | Input (Raw Photo) | Prompt | Output (VisionCraft Result) |
 | --- | --- | --- |
-| <img src="https://www.google.com/search?q=https://via.placeholder.com/150%3Ftext%3DRaw%2BCan" width="150"> | "On a neon-lit gaming desk" | <img src="https://www.google.com/search?q=https://via.placeholder.com/150%3Ftext%3DAI%2BResult" width="150"> |
+| <img src="https://driftbasket.com/wp-content/uploads/2022/06/monster-e1692443093805.jpg" width="150"> | "On a neon-lit gaming desk" | <img src="" width="150"> |
 
 _Note: The system automatically detected the "Monster Energy" logo and "Mango Loco" flavor text without user input._
 
