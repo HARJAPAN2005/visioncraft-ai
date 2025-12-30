@@ -7,7 +7,7 @@ app.use('/*', cors())
 
 app.get('/', (c) => c.text('VisionCraft AI is Active 🟢'))
 
-app.post('/process', async (c) => {
+app.post('/generate', async (c) => {
   try {
     const body = await c.req.parseBody()
     
