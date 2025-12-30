@@ -3,7 +3,6 @@
 # 📸 VisionCraft AI - Commercial Product Photography SaaS
 ![VisionCraft Banner](https://img.shields.io/badge/Status-Beta%20v1.5-blue?style=for-the-badge)
 ![Tech Stack](https://img.shields.io/badge/Stack-Next.js%2014%20|%20Gemini%202.5%20|%20Bun-purple?style=for-the-badge)
-![VisionCraft Demo](https://via.placeholder.com/800x400?text=VisionCraft+Dashboard+Screenshot+Here)
 
 <p align="center">
   <img src="https://img.shields.io/badge/AI-Gemini%202.5%20Flash-8E75B2?style=for-the-badge&logo=google&logoColor=white" />
