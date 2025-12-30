@@ -45,24 +45,25 @@ VisionCraft uses a "Vision-to-Execution" pipeline powered by **Google's Gemini 2
 </div>
 * * *
 
-\## \\## 🏗️ Architecture
+## 🏗️ Architecture
 
-The system operates on a specialized \\\*\\\*Agentic Workflow\\\*\\\*:
+The system operates on a specialized **Agentic Workflow**:
 
-\\\`\\\`\\\`mermaid
+```mermaid
 graph LR
-  A\[User Upload\] -->|WASM| B(Background Removal);
+  A[User Upload] -->|WASM| B(Background Removal);
   B -->|Clean Cutout| C(Vision Node);
   C -->|Extracts Brand & Context| D(Prompt Engineer);
   D -->|Synthesizes Scene| E(Generation Node);
   E -->|Background Image| F{Composite Engine};
   B -->|Original Pixels| F;
-  F -->|Final Render| G\[Commercial Asset\];
+  F -->|Final Render| G[Commercial Asset];
   
   style B fill:#ffecb3,stroke:#ff6f00
   style F fill:#e1f5fe,stroke:#01579b
   style G fill:#f3e5f5,stroke:#4a148c
 
+```
 **Tech Stack:**
 
 *   **Core AI:** Google Gemini 2.5 Flash & Flash-Image
